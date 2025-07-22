@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+#intro {
+    height: fit-content;
+    min-height: calc(100vh - 3rem);
+    width: 100vw;
+    max-width: 80rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    color: #1b263b;
+}
+
+.hello {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.introText {
+    font-size: 2.5rem;
+}
+
+.introName {
+    color: #ef798a;
+    font-weight: bolder;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.intro-content-int {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.introPara {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.intro-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    margin-right: 3rem;
+}
+
+.me {
+    background-image: url(/src/assets/ritika.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #66666e;
+    border-radius: 50%;
+    height: 300px;
+    transition: all 1s ease-in-out;
+    width: 300px;
+    background-color: rgb(214, 232, 249);
+    right: 2em;
+    top: 2em;
+    box-shadow: 0 0 50px 5px grey;
+}
+
+.name {
+    font-family: 'Allura', cursive;
+    font-size: 2rem;
+    color: #393d3f;
+}
+
+@media screen and (max-width:500px) {
+    #intro {
+        width: 35rem;
+        height: 70vh;
+    }
+
+    .mountain {
+        display: none;
+    }
+
+    .intro-content-int {
+        display: flex;
+        padding-bottom: 0;
+    }
+    .me {
+    box-shadow: -10px 10px 50px 5px grey;
+    }
+    .intro-photo {
+        
+    margin-right: 1rem;
+    }
+}
+
+.mountain {
+    z-index: 5;
+    background-image: url(/src/assets/mountain.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 6rem;
+    width: 15rem;
+    bottom: 0;
+    align-self: flex-start;
+}

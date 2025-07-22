@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+#contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/bannerbeige1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100vw;
+    max-width: 80rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 0px 0px 20px 3px rgba(0, 0, 0, 0.5);
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 30px;
+    color: rgb(59, 59, 59);
+    font-family: "DM Sans", sans-serif;
+}
+
+.form {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    max-width: 80rem;
+    text-align: left;
+}
+
+.namefill,
+.mail,
+.msg {
+    font-size: medium;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-family: "DM Sans", sans-serif;
+    border-bottom: 2px solid black;
+}
+
+.namefill:focus,
+.mail:focus,
+.msg:focus {
+    outline: none;
+}
+
+.input-group {
+    width: 50%;
+    margin: 1rem;
+}
+
+.input-group label {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.submit {
+    background: #cb997e;
+    border: none;
+    padding: 0.75rem 2.5rem;
+    margin: 2rem 0;
+    color: black;
+    font-size: 1rem;
+    font-family: "DM Sans", sans-serif;
+    transition: all 0.8s ease;
+    transform: scale(1);
+}
+
+.submit:hover {
+    transform: scale(1.1);
+    background: grey;
+}
+
+.links {
+    height: 4rem;
+    margin: 1rem
+}
+
+.social-link {
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+    margin: 0 0.25rem;
+}
+@media screen and (max-width:500px) {
+    #contact {
+        width: 35rem;
+        background-size: 200% 100%;
+    }
+}
+
+.message {
+    padding: 0 5rem;
+    height: 10rem;
+    position: absolute;
+    margin-bottom: 60px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    z-index: 5;
+    text-align: center;
+    animation: buttons 0.1s linear;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 3px grey;
+    font-family: "DM Sans", sans-serif;
+
+    animation: buttons 0.4s linear;
+}
+
+.message .success {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(57, 57, 57);
+    animation: buttons 0.1s linear;
+    display: none;
+}
+
+.message .danger {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(57, 57, 57);
+    animation: buttons 0.4s linear;
+    display: none;
+}
+
+@keyframes buttons {
+    0% {
+        transform: scale(0.1);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

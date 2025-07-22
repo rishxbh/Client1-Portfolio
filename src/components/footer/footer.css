@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+.footer {
+    width: 100vw;
+    height: 1.5 rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: small;
+    font-family: "DM Sans", sans-serif;
+    background-color: rgb(229, 228, 223);
+}
+@media screen and (max-width:500px){
+    .footer {
+        width: 35rem;
+    }
+}
